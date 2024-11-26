@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-header h1 {
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .profile-header p {
+            color: #6c757d;
+            font-size: 1rem;
+        }
+        .profile-info {
+            margin: 20px 0;
+        }
+        .profile-info p {
+            color: #495057;
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+        .profile-info .label {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .edit-link {
+            color: #007bff;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .edit-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1>User Profile</h1>
+            <p>Welcome to your profile, <span class="label"><%= username %></span></p>
+        </div>
+
+        <div class="profile-info">
+            <p><span class="label">Username:</span> <%= username %></p>
+            <p><span class="label">Password:</span> <%= password %></p>
+        </div>
+
+       
+    </div>
+
+</body>
+</html>

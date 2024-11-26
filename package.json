@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Luyanda": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "useRouter",
+    ""
+  ],
+  "author": "Luyanda Shamase",
+  "license": "Attribution-ShareAlike CC BY-SA",
+  "description": "Create an API for managing user profiles. Users can create, view, update, and delete their profiles, which will be stored in a JSON file.",
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
     "express": "^4.21.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.7"
